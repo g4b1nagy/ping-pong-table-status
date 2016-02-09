@@ -17,7 +17,7 @@ function checkStatus() {
       document.getElementsByTagName('img')[0].style.opacity = 1;
     }
   }
-  req.open('GET', 'status.json', true);
+  req.open('GET', 'status.json?rand=' + new Date().getTime(), true);
   req.send();
 }
 
