@@ -60,7 +60,14 @@ img {
 /* targets xs */
 @media (max-width: 767px) {
 
+  body {
+    font-size: 5px;
+  }
 
+  img {
+    width: 50%;
+    height: auto;
+  }
 
 }
 
