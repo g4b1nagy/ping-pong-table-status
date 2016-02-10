@@ -20,7 +20,6 @@ function checkStatus() {
         document.getElementById('yay').style.opacity = 0;
         document.getElementById('yay').style.display = 'none';
       }
-      document.getElementsByTagName('img')[0].style.opacity = 1;
     }
   }
   req.open('GET', 'status.json?rand=' + new Date().getTime(), true);
