@@ -17,7 +17,7 @@ h1 {
 }
 
 img {
-  display: none;
+  display: block;
   margin: 0 auto;
   opacity: 0;
   transition: opacity ease 0.8s;
