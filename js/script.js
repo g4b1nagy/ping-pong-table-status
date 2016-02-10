@@ -9,10 +9,16 @@ function checkStatus() {
       var data = JSON.parse(req.responseText);
       if (data['table_status'] == 'available') {
         document.body.style.backgroundColor = '#41c04b';
-        document.getElementsByTagName('img')[0].src = 'img/yay.svg';
+        document.getElementById('yay').style.opacity = 1;
+        document.getElementById('yay').style.display = 'block';
+        document.getElementById('nay').style.opacity = 0;
+        document.getElementById('nay').style.display = 'none';
       } else {
         document.body.style.backgroundColor = '#f85d00';
-        document.getElementsByTagName('img')[0].src = 'img/nay.svg';
+        document.getElementById('nay').style.opacity = 1;
+        document.getElementById('nay').style.display = 'block';
+        document.getElementById('yay').style.opacity = 0;
+        document.getElementById('yay').style.display = 'none';
       }
       document.getElementsByTagName('img')[0].style.opacity = 1;
     }
